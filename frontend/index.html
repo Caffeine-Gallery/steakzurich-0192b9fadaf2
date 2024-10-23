@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zurich Prime Steakhouse</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Zurich Prime</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reservations">Reservations</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Zurich Prime Steakhouse</h1>
+            <p>Experience the finest cuts in the heart of Zurich</p>
+            <a href="#reservations" class="cta-button">Make a Reservation</a>
+        </section>
+
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <div id="menu-items" class="menu-grid">
+                <!-- Menu items will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <section id="reservations">
+            <h2>Make a Reservation</h2>
+            <form id="reservation-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <input type="date" id="date" required>
+                <input type="time" id="time" required>
+                <input type="number" id="guests" placeholder="Number of Guests" min="1" max="10" required>
+                <button type="submit">Reserve Table</button>
+            </form>
+        </section>
+
+        <section id="about">
+            <h2>About Zurich Prime</h2>
+            <p>Nestled in the heart of Zurich, our steakhouse offers an unparalleled dining experience. We pride ourselves on serving the finest cuts of meat, sourced from premium suppliers and prepared to perfection by our expert chefs.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <input type="text" id="contact-name" placeholder="Your Name" required>
+                <input type="email" id="contact-email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <p><i data-feather="map-pin"></i> 123 Bahnhofstrasse, 8001 Zürich</p>
+                <p><i data-feather="phone"></i> +41 44 123 45 67</p>
+                <p><i data-feather="mail"></i> info@zurichprime.ch</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Zurich Prime Steakhouse. All rights reserved.</p>
+    </footer>
+
+    <div id="loading" class="loading hidden">
+        <div class="spinner"></div>
+    </div>
+
+    <script type="module" src="index.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>

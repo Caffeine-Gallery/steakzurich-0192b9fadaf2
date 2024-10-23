@@ -1,0 +1,35 @@
+type Reservation = 
+ record {
+   date: text;
+   email: text;
+   guests: nat;
+   id: nat;
+   name: text;
+   time: text;
+ };
+type MenuItem = 
+ record {
+   category: text;
+   description: text;
+   id: nat;
+   name: text;
+   price: float64;
+ };
+type ContactMessage = 
+ record {
+   email: text;
+   id: nat;
+   message: text;
+   name: text;
+   timestamp: int;
+ };
+service : {
+  addMenuItem: (text, text, float64, text) -> (nat);
+  getAllMenuItems: () -> (vec MenuItem) query;
+  getContactMessage: (nat) -> (opt ContactMessage) query;
+  getMenuItem: (nat) -> (opt MenuItem) query;
+  getReservation: (nat) -> (opt Reservation) query;
+  initializeMenuItems: () -> ();
+  makeReservation: (text, text, text, text, nat) -> (nat);
+  submitContactMessage: (text, text, text) -> (nat);
+}
