@@ -3,77 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zurich Prime Steakhouse</title>
+    <title>Disco Steaks Zurich</title>
     <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Space+Mono&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
+    <div class="disco-ball">
+        <div class="ball"></div>
+        <div class="lights"></div>
+    </div>
+
     <header>
         <nav>
-            <div class="logo">Zurich Prime</div>
+            <div class="logo">Disco Steaks</div>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#reservations">Reservations</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" class="glow-text">Home</a></li>
+                <li><a href="#menu" class="glow-text">Menu</a></li>
+                <li><a href="#reservations" class="glow-text">Reservations</a></li>
+                <li><a href="#about" class="glow-text">About</a></li>
+                <li><a href="#contact" class="glow-text">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="home" class="hero">
-            <h1>Zurich Prime Steakhouse</h1>
-            <p>Experience the finest cuts in the heart of Zurich</p>
-            <a href="#reservations" class="cta-button">Make a Reservation</a>
+        <section id="home" class="hero disco-gradient">
+            <h1 class="retro-text">Disco Steaks Zurich</h1>
+            <p class="funky-text">Where Great Steaks Meet Groovy Vibes</p>
+            <a href="#reservations" class="cta-button disco-button">Get Down Tonight</a>
         </section>
 
-        <section id="menu">
-            <h2>Our Menu</h2>
+        <section id="menu" class="disco-section">
+            <h2 class="retro-text">Groovy Menu</h2>
             <div id="menu-items" class="menu-grid">
                 <!-- Menu items will be dynamically inserted here -->
             </div>
         </section>
 
-        <section id="reservations">
-            <h2>Make a Reservation</h2>
-            <form id="reservation-form">
-                <input type="text" id="name" placeholder="Your Name" required>
-                <input type="email" id="email" placeholder="Your Email" required>
+        <section id="reservations" class="disco-section">
+            <h2 class="retro-text">Book Your Disco Dinner</h2>
+            <form id="reservation-form" class="disco-form">
+                <input type="text" id="name" placeholder="Your Funky Name" required>
+                <input type="email" id="email" placeholder="Your Groovy Email" required>
                 <input type="date" id="date" required>
                 <input type="time" id="time" required>
-                <input type="number" id="guests" placeholder="Number of Guests" min="1" max="10" required>
-                <button type="submit">Reserve Table</button>
+                <input type="number" id="guests" placeholder="Number of Party People" min="1" max="10" required>
+                <button type="submit" class="disco-button">Let's Boogie</button>
             </form>
         </section>
 
-        <section id="about">
-            <h2>About Zurich Prime</h2>
-            <p>Nestled in the heart of Zurich, our steakhouse offers an unparalleled dining experience. We pride ourselves on serving the finest cuts of meat, sourced from premium suppliers and prepared to perfection by our expert chefs.</p>
+        <section id="about" class="disco-section">
+            <h2 class="retro-text">Our Funky Story</h2>
+            <p class="funky-text">Where the spirit of disco meets premium steaks! Since the groovy era of the 70s, we've been serving up the most happening cuts in Zurich. Get ready to feast and boogie!</p>
         </section>
 
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form id="contact-form">
-                <input type="text" id="contact-name" placeholder="Your Name" required>
-                <input type="email" id="contact-email" placeholder="Your Email" required>
-                <textarea id="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
+        <section id="contact" class="disco-section">
+            <h2 class="retro-text">Get in Touch</h2>
+            <form id="contact-form" class="disco-form">
+                <input type="text" id="contact-name" placeholder="Your Far Out Name" required>
+                <input type="email" id="contact-email" placeholder="Your Hip Email" required>
+                <textarea id="message" placeholder="Your Groovy Message" required></textarea>
+                <button type="submit" class="disco-button">Send the Vibe</button>
             </form>
             <div class="contact-info">
-                <p><i data-feather="map-pin"></i> 123 Bahnhofstrasse, 8001 Zürich</p>
-                <p><i data-feather="phone"></i> +41 44 123 45 67</p>
-                <p><i data-feather="mail"></i> info@zurichprime.ch</p>
+                <p class="funky-text"><i data-feather="map-pin"></i> 123 Bahnhofstrasse, 8001 Zürich</p>
+                <p class="funky-text"><i data-feather="phone"></i> +41 44 123 45 67</p>
+                <p class="funky-text"><i data-feather="mail"></i> boogie@discosteak.ch</p>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Zurich Prime Steakhouse. All rights reserved.</p>
+    <footer class="disco-gradient">
+        <p class="funky-text">&copy; 2023 Disco Steaks Zurich. Stayin' Alive Since 1970.</p>
     </footer>
 
     <div id="loading" class="loading hidden">
-        <div class="spinner"></div>
+        <div class="spinner disco-spinner"></div>
     </div>
 
     <script type="module" src="index.js"></script>
